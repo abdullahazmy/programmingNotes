@@ -1,2 +1,2 @@
 # programmingNotes
-Notes of logic, syntax at programming
+Notes of logic, syntax at programming, using c++
