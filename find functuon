@@ -1,0 +1,24 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+using namespace std;
+int main()
+{
+    vector<int> vc = {10, 20, 30, 40};
+    // if the elemnt is found, it will iterate at the index
+    // if not found it will iterate at the index + 1 of the last element
+
+    int var = 40;
+    vector<int>::iterator it = find(vc.begin(), vc.end(), var);
+    if (it != vc.end())
+    {
+        cout << "The element is found" << endl;
+    }
+
+    else
+    {
+        cout << "The element is not found" << endl;
+    }
+
+    cout << it - vc.begin();
+}
