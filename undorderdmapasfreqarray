@@ -1,0 +1,35 @@
+#include <iostream>
+#include <unordered_map>
+using namespace std;
+
+unordered_map<int, int> mp;
+// We have used unordered map to avoid the idea of sorting the key, in case if needed, but we can use the usual map in this code.
+// note, This is called Hashing
+
+void freq(int arr[], int n)
+
+{
+    for (int i = 0; i < n; i++)
+
+    {
+
+        mp[arr[i]]++;
+    }
+}
+
+void print(int x)
+{
+    cout << mp[x];
+}
+
+int main()
+{
+    int arr[] = {1, 2, 3, 3, 5, 5};
+
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    freq(arr, n);
+    int x;
+    cin >> x;
+    print(x); // This will print the counter of x Value inside The Array
+}
