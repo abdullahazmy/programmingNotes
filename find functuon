@@ -20,5 +20,5 @@ int main()
         cout << "The element is not found" << endl;
     }
 
-    cout << it - vc.begin();
+    cout << it - vc.begin();  // This will print the index of the found element
 }
